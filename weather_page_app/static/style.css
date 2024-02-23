@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .weather-container-city {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .forecast {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: calc(170px);
+    box-sizing: border-box;
+  }
+
+  .weather {
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: calc(200px);
+    box-sizing: border-box;
+  }
+
+
+  
+
+  .forecast:nth-child(1) {
+    order: -1; /* El primer elemento se coloca antes de los demás */
+  }
+  
+  @media (max-width: 767px) {
+    .forecast {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .forecast {
+      width: 100%;
+    }
+  }
+
+  .day{
+    background-color: #8b7bd4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: calc(230px);
+    box-sizing: border-box;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .forecast-title{
+    background-color: #8b7bd4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchbar {
+    position:absolute;/* Fijar la posición del header */
+    top: 0; /* Colocarlo en la parte superior de la página */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Hacerlo ocupar todo el ancho de la página */
+    background-color: #381313; /* Color de fondo gris */
+    padding: 20px; /* Añadir espacio interno */
+}
+
+.searchbar button {
+  font-size: 20px; /* Tamaño del texto */
+  padding: 10px 20px; /* Espacio dentro del input y el botón */
+  background-color: #2b0b75; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+}
+.searchbar input {
+  font-size: 20px; /* Tamaño del texto */
+  padding: 10px 20px; /* Espacio dentro del input y el botón */
+  background-color: #ffffff; /* Color de fondo del botón */
+  color: rgb(0, 0, 0); /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+}
+.searchbar button:hover{  
+  background-color: rgb(168, 181, 230);
+  color: #ffffff;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+.forecast:hover {
+  background-color: #ddc174;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+.weather:hover{
+  background-color: #ddc174;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+.weather-container{
+  margin-top: 100px;
+}

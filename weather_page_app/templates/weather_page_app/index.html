@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="searchbar">
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="city" placeholder="Type a city...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="weather-container">
+        {% if weatherData %}
+            <div class="city-container">
+                {% include 'weather_page_app/currentWeather.html' with weatherData=weatherData %}
+                {% include 'weather_page_app/forecastWeather.html' with dailyForecasts=dailyForecasts %}
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>

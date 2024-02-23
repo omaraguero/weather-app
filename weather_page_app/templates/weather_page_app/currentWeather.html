@@ -1,0 +1,15 @@
+{% if weatherData %}
+
+    <h1>{{ weatherData.city }} </h1>
+
+    <div class="weather-container-city">
+        <div class="weather">
+            <h2>Today</h2>
+            <h2>{{ weatherData.temperature }} °C </h2>
+            <p>{{ weatherData.description }} </p>
+            <img src="http://openweathermap.org/img/w/{{ weatherData.icon }}.png" alt="{{ weatherData.description }}">
+        </div>
+    </div>
+
+
+{% endif %}
