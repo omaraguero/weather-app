@@ -1,3 +1,4 @@
 # weather-app
 Weather app made for a YouTube tutorial using Python, django an Openweathermap API
-I will upload the video on 24/02/2024
+
+YouTube tutorial on: https://youtu.be/zaj4k9bnuf0
